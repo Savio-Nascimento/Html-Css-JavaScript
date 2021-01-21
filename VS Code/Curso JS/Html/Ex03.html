@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Comando que Altera variáveis para inteiros, e utiliza o ${}template string para interpolação-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursoEmVidéo</title>
+    <style>
+        body{background-color: #380238;
+        color: white;
+        font: normal 20pt Arial; 
+        }
+    h1{
+        color: orchid;
+    }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p>Começando o curso </p>
+ <script>
+    // number + number = adição
+    // string + string = concatenação
+  
+    //TESTE 01
+      var n1 = Number.parseInt (window.prompt('Digite um numero: '))
+      var n2 = Number.parseInt (window.prompt('Digite o segundo numero: '))
+      var s = n1 + n2 
+      window.alert('A soma dos valores é: ' + s) // Concatenação
+
+    //TESTE 02
+     //Comando que altera as variaveis para flutuantes(numeros reais)
+       var n1 = Number.parseFloat (window.prompt('Digite um numero: '))
+       var n2 = Number.parseFloat (window.prompt('Digite o segundo numero: '))
+       var s = n1 + n2 
+       window.alert('A soma dos valores é: ' + s) // Concatenação 
+    
+    //TESTE 03
+     //Comando que altera as variavais para inteiros ou flutuantes automaticamente
+      var n1 = Number (window.prompt('Digite um numero: '))
+      var n2 = Number (window.prompt('Digite o segundo numero: '))
+      var s = n1 + n2 
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // $template string interpola. 
+                 
+ </script>
+</body>
+</body>
+</html>

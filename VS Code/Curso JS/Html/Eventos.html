@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--Código que cria eventos com o DOM -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2</title>
+<style>
+    div#area{
+        font: normal 20pt Arial;
+        background: rgb(10, 139, 10);
+        color: rgb(255, 255, 255);
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+   <!--Criando uma div id com o nome area--> 
+    <div id = 'area'><!-- onclick = "clicar()" onmouseenter = "entrar()" onmouseout="sair()"   //JEITO 1 USANDO O CSS PARA FAZER OS EVENTOS-->  
+        Interajaaaaaa...
+    </div>
+</body>
+<script>
+   //Declaração da variavel
+    var a = window.document.getElementById('area')
+   
+   //JEITO 2 DE FAZER OS EVENTOS USANDO O COMANDO ADDEVENTLISTENER, CLICK, MOUSEENTER, MOUSEOUT
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+
+   //Funções que chamam as funções criadas na tag div id 
+    function clicar(){        
+        a.innerText = 'Clicou!'
+        a.style.background = 'red'
+    }
+    function entrar(){
+        a.innerText = 'Entrou!'
+    }
+    function sair(){
+        a.innerText = 'Saiu!'
+        a.style.background = 'rgb(10, 139, 10)' 
+    }
+</script>
+</html>

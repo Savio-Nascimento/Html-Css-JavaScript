@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+<!--Comando que mostra a Seleção de divs por ID-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(13, 63, 156);
+            color: rgb(8, 8, 8);
+            font: normal 18pt Arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>Iniciando o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em Java Script</p>
+    <div id="MSG">Clique em mim</div>
+    <div id="MSG2">Não me toque</div>
+    <script>
+                    
+        var d = window.document.getElementById('MSG')
+         //Comando 1 de seleção por id
+        d.style.background = 'red' //Comando que muda a cor de fundo da Id
+        d.innerText = 'Estou aguardando...' //Comando que adiciona texto na id
+
+        var d2 = window.document.getElementById('MSG2')
+         // Comando 2 de seleção por id
+        d2.style.background = 'white' //Comando que muda a cor de fundo da Id
+        d2.innerText= 'Também estou ....' //Comando que adiciona texto na id
+
+
+    </script>
+</body>
+</html>

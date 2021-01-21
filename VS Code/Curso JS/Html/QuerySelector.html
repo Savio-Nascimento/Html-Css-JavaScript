@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+<!--Comando que mostra a Seleção de divs e ids pelo QuerySelector (o melhor)-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(13, 63, 156);
+            color: rgb(8, 8, 8);
+            font: normal 18pt Arial;
+    }
+    .texto{
+        color: aqua;
+    }
+    /*Adicionar a classe no CSS Também*/
+    </style>
+</head>
+<body>
+    <h1>Iniciando o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em Java Script</p>
+    <div id="MSG">Clique em mim</div>
+    <div class="texto">Em mim também</div>
+    
+    <script>     
+      
+        var d1 = window.document.querySelector('div#MSG')
+         //Selecionando divs com o QuerySelector
+        
+        d1.style.color = 'white' 
+         //Alterando a cor da id
+        d1.style.background = 'purple'
+         //Alterando a cor de fundo da id
+
+        var d2 = window.document.querySelector('div.texto')
+        //Selecionando divs classes com QuerySelector
+
+        d2.style.background = 'gray'
+         //Selecionando a cor de fundo da classe
+         //Cor da classe foi alterada já no CSS
+         
+    </script>
+</body>
+</html>

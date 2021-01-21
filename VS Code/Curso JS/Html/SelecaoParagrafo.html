@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+<!--Comando que mostra a Seleção de paragrafos por Marca-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando com o DOM</title>
+    <style>
+        body{
+            background-color: darkorange;
+            color: rgb(8, 8, 8);
+            font: normal 18pt Arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>Iniciando o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em Java Script</p>
+    <div>Clique em mim</em></div>
+    <script>
+         
+        var corpo = window.document.body 
+         //variavel que seleciona o corpo do site
+        var p1 = window.document.getElementsByTagName('p')[0]
+         //Variavel que seleciona um paragrafo
+        
+        window.document.write('Está escrito assim: ' + p1.innerText)
+         //Comando que adicona texto no paragrafo selecionado (o primeiro)
+        p1.style.color = 'white'
+         //Comando que muda a cor do paragrafo selecionda
+        corpo.style.background = 'darkred'
+         //Comando que muda a cor do fundo do site
+      
+
+    </script>
+</body>
+</html>
