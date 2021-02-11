@@ -16,3 +16,7 @@ Index de sites de treinamento e estudo
 </div>
 
 ---
+
+### ℹ️ Informações do projeto
+
+![visitor](https://visitor-badge.glitch.me/badge?page_id=Savio-Nascimento.C)![downloads](https://img.shields.io/github/downloads/Savio-Nascimento/C/total)![last-commit](https://img.shields.io/github/last-commit/Savio-Nascimento/C) ![repo-size](https://img.shields.io/github/repo-size/Savio-Nascimento/C?&color=lightgrey) 
